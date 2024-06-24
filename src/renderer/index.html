@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Electron</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
+    />
+
+    <link href="./assets/main.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div>
+      <h1>Versions:</h1>
+      <h3 id="chrome">Chrome:</h3>
+      <h3 id="node">Node:</h3>
+      <h3 id="electron">Electron:</h3>
+      <input type="text" id="input-area" placeholder="Enter URL" />
+      <button id="url-submit">Submit</button>
+      <br />
+      <button id="file-select">Select File</button>
+      <p id="file-path">File path:</p>
+    </div>
+
+    <script type="module" src="./src/renderer.js"></script>
+  </body>
+</html>
+ 
