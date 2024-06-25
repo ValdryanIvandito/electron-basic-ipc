@@ -17,3 +17,9 @@ contextBridge.exposeInMainWorld('openFileApi', {
     return ipcRenderer.invoke('open-file')
   }
 })
+
+contextBridge.exposeInMainWorld('executeApp', {
+  executeApp: async () => {
+    return ipcRenderer.invoke('execute-app')
+  }
+})

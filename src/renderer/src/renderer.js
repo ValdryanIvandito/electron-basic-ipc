@@ -24,3 +24,9 @@ fileSelector.addEventListener('click', async () => {
   const path = await openFileApi.openFile()
   filePath.innerHTML += path
 })
+
+const executeApp = document.getElementById('execute-app')
+
+executeApp.addEventListener('click', async () => {
+  window.executeApp.executeApp()
+})
